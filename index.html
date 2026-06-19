@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffd23f" />
+  <meta name="description" content="Portofolio Muhammad Haikal — Academic Consultant, Assignment Mentor & Academic Writer. Mahasiswa Informatika, lulusan TKJ 2024." />
+  <title>Muhammad Haikal — Academic Consultant & Informatics Student</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== INTRO LOADER ===================== -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-card">
+      <span class="loader-name" id="loaderName"></span>
+      <span class="loader-caret">_</span>
+    </div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#beranda" class="logo">Haikal<span>.</span></a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+        <a href="#beranda" class="nav-link">Beranda</a>
+        <a href="#tentang" class="nav-link">Tentang</a>
+        <a href="#keahlian" class="nav-link">Keahlian</a>
+        <a href="#portofolio" class="nav-link">Portofolio</a>
+        <a href="#sertifikat" class="nav-link">Sertifikat</a>
+        <a href="#layanan" class="nav-link">Layanan</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="musicBtnNav" class="music-btn-nav" aria-label="Putar musik latar" title="Putar / jeda musik">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="menuToggle" class="menu-toggle" aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section id="beranda" class="hero section">
+      <div class="hero-grid">
+        <div class="hero-text reveal">
+          <span class="badge badge-pulse">📌 Tersedia untuk proyek baru</span>
+          <h1 class="hero-title">Muhammad<br />Haikal</h1>
+          <p class="hero-role">Academic Consultant, Assignment Mentor &amp; Academic Writer / Informatics Student</p>
+          <p class="hero-desc">
+            Lulusan TKJ 2024, sekarang menempuh S1 Informatika. Saya membantu mahasiswa, pelajar,
+            dan pendidik menyelesaikan tugas akademik lintas jurusan — sekaligus aktif di
+            <strong>academic consulting</strong> &amp; <strong>scientific writing</strong>,
+            sambil membangun proyek web &amp; teknologi.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#portofolio" class="btn btn-primary">Lihat Portofolio</a>
+            <a href="#kontak" class="btn btn-ghost">Hubungi Saya</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat-card">
+              <span class="stat-num" data-count="2024" data-suffix="">0</span>
+              <span class="stat-label">TKJ Graduate</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-count="6" data-suffix=" Bln">0</span>
+              <span class="stat-label">Magang</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-count="500" data-suffix="+">0</span>
+              <span class="stat-label">Client</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LANYARD ID CARD -->
+        <div class="hero-lanyard reveal">
+          <div class="lanyard-wrap" id="lanyardWrap">
+            <div class="lanyard-strap"></div>
+            <div class="lanyard-clip"></div>
+            <div class="id-card" id="idCard">
+              <div class="id-hole"></div>
+              <div class="id-top">
+                <span class="id-brand">STUDENT ID</span>
+                <span class="id-dot"></span>
+              </div>
+              <!-- GANTI_ASET: ganti src ini dengan foto profil asli, rekomendasi rasio 1:1 -> assets/images/profile.jpeg -->
+              <img class="id-photo" src="assets/images/profile.jpeg" alt="Foto profil Muhammad Haikal" draggable="false" />
+              <h2 class="id-name">Muhammad Haikal</h2>
+              <p class="id-title">Academic Writer &amp; Task Helper</p>
+              <p class="id-title-sub">Informatics Student</p>
+              <span class="id-loc"><i class="fa-solid fa-location-dot"></i> Aceh, Indonesia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MARQUEE ===================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>ACADEMIC CONSULTANT ✦ ASSIGNMENT MENTOR ✦ SCIENTIFIC WRITING ✦ WEB DEVELOPMENT ✦ DATA &amp; ADMINISTRASI ✦ VIDEO EDITING ✦</span>
+        <span>ACADEMIC CONSULTANT ✦ ASSIGNMENT MENTOR ✦ SCIENTIFIC WRITING ✦ WEB DEVELOPMENT ✦ DATA &amp; ADMINISTRASI ✦ VIDEO EDITING ✦</span>
+      </div>
+    </div>
+
+    <!-- ===================== TENTANG ===================== -->
+    <section id="tentang" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">💼 Tentang Saya</h2>
+        <p class="section-sub reveal">Dari ruang kelas ke proyek nyata.</p>
+
+        <div class="about-grid">
+          <article class="info-card tilt-l reveal">
+            <span class="info-emoji">🎓</span>
+            <h3>Latar Belakang Pendidikan</h3>
+            <p>Lulus pendidikan menengah dengan predikat sangat memuaskan, meraih peringkat nilai tertinggi di jurusan Teknik Komputer &amp; Jaringan.</p>
+          </article>
+
+          <article class="info-card tilt-r reveal">
+            <span class="info-emoji">💼</span>
+            <h3>Pengalaman Magang</h3>
+            <p>Magang 6 bulan di bagian administrasi &amp; manajemen data salah satu universitas di Aceh: pengarsipan, pengelolaan dokumen, dan pengolahan data internal.</p>
+          </article>
+
+          <article class="info-card tilt-l reveal">
+            <span class="info-emoji">🏆</span>
+            <h3>Prestasi &amp; Proyek Lintas Jurusan</h3>
+            <ul class="achieve-list">
+              <li>Peringkat 1 Kelas X, XI, XII TKJ (2021–2023)</li>
+              <li>UjiKom: Troubleshooting Keamanan Jaringan WAN — <em>Competent</em></li>
+              <li>Dicoding — Python &amp; Generative AI</li>
+              <li>Belajar Dasar AI &amp; AI Praktis untuk Produktivitas</li>
+              <li>Coursera (Microsoft) — Excel for Analysis &amp; Work Smarter</li>
+              <li>Microsoft Azure Fundamentals</li>
+              <li>MVA — Keamanan di Dunia Digital</li>
+            </ul>
+            <p class="achieve-note">Aktif membantu proyek akademik dari jurusan Kesehatan, Hukum, Informatika, Manajemen, Ekonomi, Akuntansi, Keperawatan, Pendidikan — termasuk tugas PPG (modul &amp; bahan ajar).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== KEAHLIAN ===================== -->
+    <section id="keahlian" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">🛠️ Keahlian Utama</h2>
+        <p class="section-sub reveal">Satu kepala, banyak kompetensi.</p>
+
+        <div class="skills-grid">
+          <article class="skill-card highlight reveal">
+            <span class="skill-emoji">🎓</span>
+            <h3>Academic Consultant</h3>
+            <p>Konsultasi akademik lintas jurusan: membantu menentukan topik, kerangka tugas, dan strategi penyelesaian.</p>
+          </article>
+          <article class="skill-card highlight reveal">
+            <span class="skill-emoji">📝</span>
+            <h3>Assignment Mentor</h3>
+            <p>Pendampingan penyelesaian tugas dari awal sampai akhir — membimbing proses, bukan menggantikan.</p>
+          </article>
+          <article class="skill-card highlight reveal">
+            <span class="skill-emoji">🔬</span>
+            <h3>Academic &amp; Scientific Writing</h3>
+            <p>Penulisan artikel ilmiah, makalah, dan jurnal dengan kaidah akademik yang benar (sitasi, metodologi, struktur).</p>
+          </article>
+
+          <article class="skill-card reveal"><span class="skill-emoji">💻</span><h3>Web Development</h3><p>HTML, CSS, JavaScript.</p></article>
+          <article class="skill-card reveal"><span class="skill-emoji">🧾</span><h3>Administrasi &amp; Data</h3><p>Word, Excel, PDF Editor.</p></article>
+          <article class="skill-card reveal"><span class="skill-emoji">📚</span><h3>Academic Problem Solving</h3><p>Lintas jurusan.</p></article>
+          <article class="skill-card reveal"><span class="skill-emoji">🗣️</span><h3>Public Speaking</h3><p>Presentasi &amp; komunikasi.</p></article>
+          <article class="skill-card reveal"><span class="skill-emoji">🧠</span><h3>Analytical Thinking</h3><p>Berpikir analitis.</p></article>
+          <article class="skill-card reveal"><span class="skill-emoji">✍️</span><h3>Academic Writing</h3><p>Makalah, jurnal, esai, laporan praktikum.</p></article>
+          <article class="skill-card reveal"><span class="skill-emoji">🎨</span><h3>Design &amp; Editing</h3><p>Desain visual &amp; layout.</p></article>
+          <article class="skill-card reveal"><span class="skill-emoji">🎞️</span><h3>Video Editing</h3><p>CapCut, VN, Canva Video.</p></article>
+          <article class="skill-card reveal"><span class="skill-emoji">🏢</span><h3>Pengalaman Perkantoran</h3><p>Administrasi profesional.</p></article>
+          <article class="skill-card reveal"><span class="skill-emoji">🔍</span><h3>Proofreading</h3><p>Koreksi &amp; penyuntingan.</p></article>
+        </div>
+
+        <h3 class="mini-title reveal">Soft Skills</h3>
+        <div class="pill-row reveal">
+          <span class="pill">Time Management</span>
+          <span class="pill">Adaptability</span>
+          <span class="pill">Cross-Disciplinary</span>
+          <span class="pill">Communication</span>
+          <span class="pill">Critical Thinking</span>
+          <span class="pill">Detail-Oriented</span>
+        </div>
+
+        <h3 class="mini-title reveal">Tools &amp; Aplikasi</h3>
+        <div class="pill-row reveal">
+          <span class="pill pill-tool"><i class="fa-solid fa-network-wired"></i> Cisco Packet Tracer</span>
+          <span class="pill pill-tool"><i class="fa-solid fa-file-word"></i> Microsoft Office</span>
+          <span class="pill pill-tool"><i class="fa-solid fa-database"></i> Microsoft Access</span>
+          <span class="pill pill-tool"><i class="fa-brands fa-php"></i> PHP MySQL</span>
+          <span class="pill pill-tool"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="pill pill-tool"><i class="fa-brands fa-js"></i> JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VIDEO ===================== -->
+    <section id="video" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">📹 Video Portofolio</h2>
+        <p class="section-sub reveal">Sekilas tentang saya, dalam video.</p>
+
+        <div class="video-grid">
+          <figure class="video-frame reveal">
+            <!-- GANTI_ASET: ganti src video ini dengan motion graphic promosi jasa -> assets/videos/promosi.mp4 -->
+            <video controls preload="none" poster="" playsinline>
+              <source src="assets/videos/promosi.mp4" type="video/mp4" />
+              Browser Anda tidak mendukung pemutaran video.
+            </video>
+            <figcaption>Motion Graphic — Promosi Jasa</figcaption>
+          </figure>
+
+          <figure class="video-frame reveal">
+            <!-- GANTI_ASET: ganti src video ini dengan video portofolio -> assets/videos/portofolio.mp4 -->
+            <video controls preload="none" poster="" playsinline>
+              <source src="assets/videos/portofolio.mp4" type="video/mp4" />
+              Browser Anda tidak mendukung pemutaran video.
+            </video>
+            <figcaption>Video Portofolio Saya</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PORTOFOLIO ===================== -->
+    <section id="portofolio" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">📁 Portofolio &amp; Karya</h2>
+        <p class="section-sub reveal">Beberapa hal yang sudah saya kerjakan.</p>
+
+        <div class="work-grid">
+          <article class="work-card reveal">
+            <span class="work-emoji">🌐</span>
+            <h3>Website Development</h3>
+            <p>Pengembangan website responsif dengan teknologi modern.</p>
+            <div class="tag-row"><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span></div>
+          </article>
+          <article class="work-card reveal">
+            <span class="work-emoji">📚</span>
+            <h3>Tugas Akademik</h3>
+            <p>Penyelesaian tugas akademik berkualitas &amp; tepat waktu.</p>
+            <div class="tag-row"><span class="tag">Research</span><span class="tag">Documentation</span></div>
+          </article>
+          <article class="work-card reveal">
+            <span class="work-emoji">📄</span>
+            <h3>Desain Dokumen</h3>
+            <p>Dokumen profesional dengan layout &amp; typography menarik.</p>
+            <div class="tag-row"><span class="tag">Layout</span><span class="tag">Typography</span></div>
+          </article>
+          <article class="work-card reveal">
+            <span class="work-emoji">🎥</span>
+            <h3>Video Editing</h3>
+            <p>Editing video dengan efek visual &amp; storytelling.</p>
+            <div class="tag-row"><span class="tag">Premiere Pro</span><span class="tag">Motion Graphics</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERTIFIKAT ===================== -->
+    <section id="sertifikat" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">🏅 Sertifikat &amp; Pencapaian</h2>
+        <p class="section-sub reveal">Bukti hitam di atas putih. Galeri sertifikat akan terus diperbarui.</p>
+
+        <div class="cert-grid">
+          <!-- GANTI_ASET: assets/images/certificates/sertifikat-1.jpg -->
+          <figure class="cert-card reveal">
+            <img src="assets/images/certificates/sertifikat-1.jpg" alt="Sertifikat Peringkat 2 Kelas XII TKJ 2022" loading="lazy" />
+            <figcaption>Peringkat 1 dan 2 Kelas X, XI XII TKJ — 2022-2023</figcaption>
+          </figure>
+          <!-- GANTI_ASET: assets/images/certificates/sertifikat-2.jpg -->
+          <figure class="cert-card reveal">
+            <img src="assets/images/certificates/sertifikat-2.jpg" alt="Sertifikat UjiKom Troubleshooting Keamanan Jaringan WAN" loading="lazy" />
+            <figcaption>UjiKom: Keamanan Jaringan WAN — Competent</figcaption>
+          </figure>
+          <!-- GANTI_ASET: assets/images/certificates/sertifikat-3.jpg -->
+          <figure class="cert-card reveal">
+            <img src="assets/images/certificates/sertifikat-3.jpg" alt="Sertifikat Dicoding Pemrograman dengan Python" loading="lazy" />
+            <figcaption>Dicoding — Pemrograman dengan Python</figcaption>
+          </figure>
+          <!-- GANTI_ASET: assets/images/certificates/sertifikat-4.jpg -->
+          <figure class="cert-card reveal">
+            <img src="assets/images/certificates/sertifikat-4.jpg" alt="Sertifikat Dicoding Penggunaan Generative AI" loading="lazy" />
+            <figcaption>Dicoding — Penggunaan Generative AI</figcaption>
+          </figure>
+          <!-- GANTI_ASET: assets/images/certificates/sertifikat-5.jpg -->
+          <figure class="cert-card reveal">
+            <img src="assets/images/certificates/sertifikat-5.jpg" alt="Sertifikat Introduction to Financial Literacy" loading="lazy" />
+            <figcaption>Introduction to Financial Literacy</figcaption>
+          </figure>
+          <!-- GANTI_ASET: assets/images/certificates/sertifikat-6.jpg -->
+          <figure class="cert-card reveal">
+            <img src="assets/images/certificates/sertifikat-6.jpg" alt="Sertifikat Learning Basic Artificial Intelligence" loading="lazy" />
+            <figcaption>Learning Basic Artificial Intelligence</figcaption>
+          </figure>
+          <!-- GANTI_ASET: assets/images/certificates/sertifikat-7.jpg -->
+          <figure class="cert-card reveal">
+            <img src="assets/images/certificates/sertifikat-7.jpg" alt="Sertifikat AI Praktis untuk Produktivitas" loading="lazy" />
+            <figcaption>AI Praktis untuk Produktivitas</figcaption>
+          </figure>
+          <!-- GANTI_ASET: assets/images/certificates/sertifikat-8.jpg -->
+          <figure class="cert-card reveal">
+            <img src="assets/images/certificates/sertifikat-8.jpg" alt="Sertifikat Coursera Microsoft Preparing Data with Excel" loading="lazy" />
+            <figcaption>Coursera (Microsoft) — Preparing Data with Excel</figcaption>
+          </figure>
+          <!-- GANTI_ASET: assets/images/certificates/sertifikat-9.jpg -->
+          <figure class="cert-card reveal">
+            <img src="assets/images/certificates/sertifikat-9.jpg" alt="Sertifikat Coursera Microsoft Office Work Smarter" loading="lazy" />
+            <figcaption>Coursera (Microsoft) — Office: Work Smarter</figcaption>
+          </figure>
+          <!-- GANTI_ASET: assets/images/certificates/sertifikat-10.jpg -->
+          <figure class="cert-card reveal">
+            <img src="assets/images/certificates/sertifikat-10.jpg" alt="Sertifikat Microsoft Azure Fundamentals" loading="lazy" />
+            <figcaption>Microsoft Azure Fundamentals</figcaption>
+          </figure>
+          <!-- GANTI_ASET: assets/images/certificates/sertifikat-11.jpg -->
+          <figure class="cert-card reveal">
+            <img src="assets/images/certificates/sertifikat-11.jpg" alt="Sertifikat Microsoft Virtual Academy Keamanan Digital" loading="lazy" />
+            <figcaption>MVA — Keamanan di Dunia Digital</figcaption>
+          </figure>
+          <!-- GANTI_ASET: slot cadangan -> assets/images/certificates/sertifikat-12.jpg (kosongkan dulu) -->
+          <figure class="cert-card cert-empty reveal">
+            <div class="cert-placeholder">
+              <i class="fa-solid fa-plus"></i>
+              <span>📌 SERTIFIKAT BELUM DIUNGGAH</span>
+            </div>
+            <figcaption>Slot Cadangan</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LAYANAN ===================== -->
+    <section id="layanan" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">🧾 Layanan &amp; Jasa Saya</h2>
+        <p class="section-sub reveal">Haikal Academic Service</p>
+
+        <div class="service-box reveal">
+          <p>
+            Bantuan tugas akademik secara profesional dan etis untuk mahasiswa, pelajar, dan pendidik —
+            kini juga mencakup <strong>Academic Consultant</strong>, <strong>Assignment Mentor</strong>,
+            dan <strong>Academic &amp; Scientific Writing</strong>. Fokus pada tugas, makalah, artikel, jurnal, laporan, riset,
+            dan kebutuhan akademik dari berbagai jurusan (Kesehatan, Hukum, Informatika, Manajemen,
+            Ekonomi, Keperawatan, Pendidikan). Kami mendukung proses belajar, bukan menggantikan peran Anda.
+          </p>
+          <!-- GANTI_ASET: ganti href "#" dengan URL halaman jasa asli -->
+          <a href="https://haikalresearch.github.io/academic-consulting/" class="btn btn-primary" target="_blank" rel="noopener">🔗 Kunjungi Halaman Jasa Saya</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== KONTAK ===================== -->
+    <section id="kontak" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">✉️ Hubungi Saya</h2>
+        <p class="section-sub reveal">Mari berkolaborasi.</p>
+
+        <div class="contact-links reveal">
+          <!-- GANTI_ASET: ganti href dengan nomor WhatsApp asli -->
+          <a href="https://wa.me/6285135891242" class="contact-btn wa" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          <!-- GANTI_ASET: ganti dengan email asli -->
+          <a href="haikal_harrison@gmail.com" class="contact-btn em"><i class="fa-solid fa-envelope"></i> Email</a>
+          <!-- GANTI_ASET: ganti dengan URL LinkedIn asli -->
+          <a href="#" class="contact-btn li" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="cName">Nama</label>
+            <input type="text" id="cName" name="name" placeholder="Nama lengkap Anda" required />
+          </div>
+          <div class="field">
+            <label for="cTopic">Topik</label>
+            <input type="text" id="cTopic" name="topic" placeholder="Misal: Bantuan tugas / jasa web" required />
+          </div>
+          <div class="field">
+            <label for="cMsg">Pesan</label>
+            <textarea id="cMsg" name="message" rows="4" placeholder="Tuliskan pesan Anda..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Kirim via WhatsApp →</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#beranda" class="logo logo-light">Muhammad Haikal<span>.</span></a>
+      <nav class="footer-nav" aria-label="Navigasi footer">
+        <a href="#tentang">Tentang</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#sertifikat">Sertifikat</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <p class="copyright">© 2026 Muhammad Haikal. &amp; JS.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== FLOATING MUSIC BUTTON ===================== -->
+  <button id="musicBtn" class="music-fab" aria-label="Putar musik latar" title="Putar / jeda musik">
+    <i class="fa-solid fa-play" id="musicIcon"></i>
+    <span class="eq" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+  </button>
+
+  <!-- SCROLL TO TOP -->
+  <button id="toTop" class="to-top" aria-label="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- GANTI_ASET: ganti src audio ini dengan file musik asli -> assets/audio/bg-music.mp3 -->
+  <audio id="bg-music" loop>
+    <source src="assets/audio/bg-music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
