@@ -230,3 +230,48 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
+// ============================================================
+// LIGHTBOX SERTIFIKAT
+// ============================================================
+(function () {
+  const overlay = document.createElement("div");
+  overlay.className = "lightbox-overlay";
+  overlay.innerHTML = `
+    <div class="lightbox-box">
+      <button class="lightbox-close" aria-label="Tutup">✕</button>
+      <img src="" alt="" />
+      <p class="lightbox-caption"></p>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+
+  const imgEl = overlay.querySelector("img");
+  const captionEl = overlay.querySelector(".lightbox-caption");
+  const closeBtn = overlay.querySelector(".lightbox-close");
+
+  function openLightbox(src, caption) {
+    imgEl.src = src;
+    imgEl.alt = caption;
+    captionEl.textContent = caption;
+    overlay.classList.add("active");
+  }
+  function closeLightbox() {
+    overlay.classList.remove("active");
+    imgEl.src = "";
+  }
+
+  document.querySelectorAll(".cert-card img").forEach((img) => {
+    img.addEventListener("click", () => {
+      const caption = img.closest(".cert-card").querySelector("figcaption")?.textContent || "";
+      openLightbox(img.src, caption);
+    });
+  });
+
+  closeBtn.addEventListener("click", closeLightbox);
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) closeLightbox();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeLightbox();
+  });
+})();
